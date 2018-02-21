@@ -6,8 +6,8 @@
 </head>
 <body>
 <form id="form">
-    Encoded MP3: <input type="file" id="file" accept="audio/mpeg"><br><br>
-    Song ID: <input type="number" min="0" id="songId"><br><br>
+    Encoded MP3: <input type="file" id="file" accept="audio/mpeg">
+    <input type="hidden" min="0" id="songId" value="<?php echo $_GET['song_id'] ?>"><br><br>
     <button type="submit">Decode</button>
 </form>
 <script src="tools/FileSaver.1.3.3.min.js"></script>
